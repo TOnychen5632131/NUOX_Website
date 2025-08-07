@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
+/* Accessibility Styles */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --text-color: #ffffff;
+        --dark-bg: #000000;
+        --button-hover: #ffffff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 :root {
     --primary-color: #4a9fff;
     --secondary-color: #333333;
@@ -14,6 +68,20 @@
     padding: 0;
     box-sizing: border-box;
     cursor: none !important;
+}
+
+/* Enable cursor for accessibility */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        cursor: none !important;
+    }
+}
+
+/* Enable cursor for accessibility when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        cursor: auto !important;
+    }
 }
 
 body {

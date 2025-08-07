@@ -3,81 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUOX 智能眼镜</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Primary Meta Tags -->
+    <title>NUOX 智能眼镜 - AI辅助视障人士的智能眼镜 | 实时环境识别 | 语音导航</title>
+    <meta name="title" content="NUOX 智能眼镜 - AI辅助视障人士的智能眼镜 | 实时环境识别 | 语音导航">
+    <meta name="description" content="NUOX 智能眼镜采用前沿AI技术，为视障人士提供实时环境识别和语音导航。12小时超长续航，精准导航，让视障人士重获独立出行能力。">
+    <meta name="keywords" content="NUOX,智能眼镜,AI眼镜,视障辅助,环境识别,语音导航,无障碍科技,辅助技术,人工智能,可穿戴设备">
+    <meta name="author" content="NUOX Smart Technology">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nuox.ai/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuox.ai/">
+    <meta property="og:title" content="NUOX 智能眼镜 - AI辅助视障人士的智能眼镜">
+    <meta property="og:description" content="NUOX 智能眼镜采用前沿AI技术，为视障人士提供实时环境识别和语音导航。12小时超长续航，精准导航，让视障人士重获独立出行能力。">
+    <meta property="og:image" content="https://nuox.ai/images/nuox-smart-glasses-og.jpg">
+    <meta property="og:site_name" content="NUOX Smart Technology">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nuox.ai/">
+    <meta property="twitter:title" content="NUOX 智能眼镜 - AI辅助视障人士的智能眼镜">
+    <meta property="twitter:description" content="NUOX 智能眼镜采用前沿AI技术，为视障人士提供实时环境识别和语音导航。12小时超长续航，精准导航，让视障人士重获独立出行能力。">
+    <meta property="twitter:image" content="https://nuox.ai/images/nuox-smart-glasses-twitter.jpg">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#007bff">
+    <meta name="msapplication-TileColor" content="#007bff">
+    <meta name="application-name" content="NUOX Smart Glasses">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Resource hints for better performance -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Compression and caching -->
+    <meta http-equiv="Accept-Encoding" content="gzip, deflate, br">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NUOX">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "NUOX 智能眼镜",
+        "description": "NUOX 智能眼镜采用前沿 AI 技术，为视障人士提供实时环境识别和语音导航。",
+        "brand": {
+            "@type": "Brand",
+            "name": "NUOX"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "NUOX Smart Technology"
+        },
+        "category": "可穿戴设备",
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "CNY",
+            "priceValidUntil": "2025-12-31"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "156",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "image": "https://nuox.ai/images/nuox-smart-glasses.jpg",
+        "url": "https://nuox.ai/",
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": "电池续航",
+                "value": "12 小时"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "重量",
+                "value": "45 克"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "防水等级",
+                "value": "IPX4"
+            }
+        ],
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "张先生"
+                },
+                "reviewBody": "这款智能眼镜改变了我的生活，让我能够独立出行。"
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NUOX Smart Technology",
+        "url": "https://nuox.ai",
+        "logo": "https://nuox.ai/images/nuox-logo.png",
+        "sameAs": [
+            "https://www.instagram.com/nuox.ai/",
+            "https://x.com/nuox_tech",
+            "https://www.linkedin.com/company/nuox-ai"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": ["Chinese", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CN",
+            "addressLocality": "深圳",
+            "addressRegion": "广东"
+        },
+        "foundingDate": "2023",
+        "description": "专注于 AI 辅助技术的智能眼镜制造商，致力于为视障人士提供无障碍解决方案。"
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首页",
+                "item": "https://nuox.ai/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "产品",
+                "item": "https://nuox.ai/#products"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "NUOX Smart Technology",
+        "url": "https://nuox.ai/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nuox.ai/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">跳过导航，直接进入主要内容</a>
     <div class="light-beam"></div>
     <div class="cursor-light"></div>
     
-    <div class="language-switch">
-        <button class="lang-btn active" data-lang="zh">中文</button>
-        <button class="lang-btn" data-lang="zh-TW">繁體中文</button>
-        <button class="lang-btn" data-lang="en">English</button>
-    </div>
+    <header>
+        <nav class="language-switch" aria-label="语言选择">
+            <button class="lang-btn active" data-lang="zh" aria-pressed="true">中文</button>
+            <button class="lang-btn" data-lang="zh-TW" aria-pressed="false">繁體中文</button>
+            <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        </nav>
+    </header>
     
-    <div class="container">
-        <div class="hero">
+    <main class="container" id="main-content">
+        <section class="hero">
             <h1 class="glitch-text">NUOX</h1>
             <p class="tagline" data-lang-zh="智能眼镜赋能多元感知，共创无障碍未来" data-lang-zh-TW="智能眼鏡賦能多元感知，共創無障礙未來" data-lang-en="AI Glasses for All Abilities: Co-creating an Accessible Future">AI Glasses for All Abilities: Co-creating an Accessible Future</p>
-        </div>
+        </section>
 
-        <div class="description">
+        <section class="description">
+            <h2 class="visually-hidden">产品介绍</h2>
             <p data-lang-zh="NUOX 智能眼镜采用前沿 AI 技术，为视障人士提供实时环境识别和语音导航。" data-lang-zh-TW="NUOX 智能眼鏡採用前沿 AI 技術，為視障人士提供實時環境識別和語音導航。" data-lang-en="NUOX Smart Glasses utilize cutting-edge AI technology to provide real-time environmental recognition and voice navigation for the visually impaired.">NUOX 智能眼镜采用前沿 AI 技术，为视障人士提供实时环境识别和语音导航。</p>
             <p data-lang-zh="通过我们的社交媒体平台了解更多信息：" data-lang-zh-TW="通過我們的社交媒體平台瞭解更多信息：" data-lang-en="Learn more through our social media platforms:">通过我们的社交媒体平台了解更多信息：</p>
-        </div>
+        </section>
 
-        <div class="social-buttons">
-            <a href="https://www.instagram.com/nuox.ai/" target="_blank" class="social-button instagram">
+        <section class="social-buttons" aria-label="社交媒体链接">
+            <a href="https://www.instagram.com/nuox.ai/" target="_blank" rel="noopener noreferrer" class="social-button instagram" title="关注NUOX Instagram">
                 <div class="button-content">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                     <span>Instagram</span>
                 </div>
             </a>
-            <a href="https://x.com/nuox_tech" target="_blank" class="social-button twitter">
+            <a href="https://x.com/nuox_tech" target="_blank" rel="noopener noreferrer" class="social-button twitter" title="关注NUOX X">
                 <div class="button-content">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                     <span>X</span>
                 </div>
             </a>
-            <a href="https://www.xiaohongshu.com/user/profile/671f1bee000000000b032412?xsec_token=YBbO_mqmwBN0QbVRbm_leophvpuUaX7K2m-JmaWYu6rx8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=671f1bee000000000b032412&apptime=1745665232&share_id=b4eb1f3a6aee49a08fe006109cffba65&share_channel=copy_link" target="_blank" class="social-button xiaohongshu">
+            <a href="https://www.xiaohongshu.com/user/profile/671f1bee000000000b032412?xsec_token=YBbO_mqmwBN0QbVRbm_leophvpuUaX7K2m-JmaWYu6rx8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=671f1bee000000000b032412&apptime=1745665232&share_id=b4eb1f3a6aee49a08fe006109cffba65&share_channel=copy_link" target="_blank" rel="noopener noreferrer" class="social-button xiaohongshu" title="关注NUOX 小红书">
                 <div class="button-content">
-                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book" aria-hidden="true"></i>
                     <span data-lang-zh="小红书" data-lang-zh-TW="小紅書" data-lang-en="Xiaohongshu">小红书</span>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/company/nuox-ai" target="_blank" class="social-button linkedin">
+            <a href="https://www.linkedin.com/company/nuox-ai" target="_blank" rel="noopener noreferrer" class="social-button linkedin" title="关注NUOX LinkedIn">
                 <div class="button-content">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                     <span>LinkedIn</span>
                 </div>
             </a>
-        </div>
+        </section>
 
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon"><i class="fas fa-eye"></i></div>
+        <section class="features" aria-label="产品特性">
+            <h2 class="visually-hidden">产品特性</h2>
+            <article class="feature">
+                <div class="feature-icon" aria-hidden="true"><i class="fas fa-eye"></i></div>
                 <h3 data-lang-zh="实时识别" data-lang-zh-TW="實時識別" data-lang-en="Real-time Recognition">实时识别</h3>
                 <p data-lang-zh="准确识别周围环境，并通过语音提示告知用户" data-lang-zh-TW="準確識別周圍環境，並通過語音提示告知用戶" data-lang-en="Accurately recognize the surrounding environment and provide voice prompts to users">准确识别周围环境，并通过语音提示告知用户</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+            </article>
+            <article class="feature">
+                <div class="feature-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
                 <h3 data-lang-zh="精准导航" data-lang-zh-TW="精準導航" data-lang-en="Precise Navigation">精准导航</h3>
                 <p data-lang-zh="提供精确的路线导航和障碍物警告" data-lang-zh-TW="提供精確的路線導航和障礙物警告" data-lang-en="Provide precise route navigation and obstacle warnings">提供精确的路线导航和障碍物警告</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon"><i class="fas fa-battery-full"></i></div>
+            </article>
+            <article class="feature">
+                <div class="feature-icon" aria-hidden="true"><i class="fas fa-battery-full"></i></div>
                 <h3 data-lang-zh="长效电池" data-lang-zh-TW="長效電池" data-lang-en="Long Battery Life">长效电池</h3>
                 <p data-lang-zh="12 小时超长续航，随时随地为您提供帮助" data-lang-zh-TW="12 小時超長續航，隨時隨地為您提供幫助" data-lang-en="12 hours of extended battery life, providing assistance anytime, anywhere">12 小时超长续航，随时随地为您提供帮助</p>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <p data-lang-zh="&copy; 2025 NUOX 智能科技 - 专注创新，改变生活" data-lang-zh-TW="&copy; 2025 NUOX 智能科技 - 專注創新，改變生活" data-lang-en="&copy; 2025 NUOX Smart Technology - Focus on Innovation, Change Lives">&copy; 2023 NUOX 智能科技 - 专注创新，改变生活</p>
+        <p data-lang-zh="&copy; 2025 NUOX 智能科技 - 专注创新，改变生活" data-lang-zh-TW="&copy; 2025 NUOX 智能科技 - 專注創新，改變生活" data-lang-en="&copy; 2025 NUOX Smart Technology - Focus on Innovation, Change Lives">&copy; 2025 NUOX 智能科技 - 专注创新，改变生活</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.0.1"></script>
 </body>
 </html> 

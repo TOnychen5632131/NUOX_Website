@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+         xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://nuox.ai/</loc>
+        <lastmod>2025-01-27T00:00:00+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://nuox.ai/images/nuox-smart-glasses.jpg</image:loc>
+            <image:title>NUOX 智能眼镜</image:title>
+            <image:caption>AI辅助视障人士的智能眼镜</image:caption>
+        </image:image>
+    </url>
+</urlset> 
